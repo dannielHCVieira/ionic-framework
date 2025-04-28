@@ -31,7 +31,6 @@
     "loader/"
   ],
   "dependencies": {
-    "@stencil/core": "4.20.0",
     "ionicons": "^7.2.2",
     "tslib": "^2.1.0"
   },
@@ -48,9 +47,14 @@
     "@rollup/plugin-node-resolve": "^8.4.0",
     "@rollup/plugin-virtual": "^2.0.3",
     "@stencil/angular-output-target": "^0.10.0",
+    "@stencil/core": "^4.30.0",
     "@stencil/react-output-target": "0.5.3",
     "@stencil/sass": "^3.0.9",
+    "@stencil/storybook-plugin": "^0.0.9",
     "@stencil/vue-output-target": "0.10.7",
+    "@storybook/addon-essentials": "^8.6.12",
+    "@storybook/addon-interactions": "^8.6.12",
+    "@storybook/addon-links": "^8.6.12",
     "@types/jest": "^29.5.6",
     "@types/node": "^14.6.0",
     "@typescript-eslint/eslint-plugin": "^6.7.2",
@@ -69,6 +73,7 @@
     "rollup": "^2.26.4",
     "sass": "^1.33.0",
     "serve": "^14.0.1",
+    "storybook": "^8.6.12",
     "stylelint": "^13.13.1",
     "stylelint-order": "^4.1.0"
   },
@@ -101,7 +106,8 @@
     "test.e2e.docker": "npm run docker.build && node ./scripts/docker.mjs",
     "test.e2e.docker.update-snapshots": "npm run test.e2e.docker -- --update-snapshots='changed'",
     "test.e2e.docker.ci": "npm run docker.build && CI=true node ./scripts/docker.mjs",
-    "test.e2e.script": "node scripts/testing/e2e-script.mjs"
+    "test.e2e.script": "node scripts/testing/e2e-script.mjs",
+    "storybook": "storybook dev -p 6006 --no-open"
   },
   "author": "Ionic Team",
   "license": "MIT",
