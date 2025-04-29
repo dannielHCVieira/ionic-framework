@@ -27,6 +27,7 @@
     "outDir": ".tmp",
     "pretty": true,
     "removeComments": false,
+    "skipLibCheck": true,
     "target": "es2017",
     "baseUrl": ".",
     "paths": {

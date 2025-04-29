@@ -10,9 +10,18 @@ const meta: Meta<Button> = {
     layout: 'centered',
   },
   argTypes: {
-    fill: { control: 'text' },
-    expand: { control: 'text' },
-    size: { control: 'text' },
+    fill: {
+      control: 'select',
+      options: ['solid', 'outline', 'clear']
+    },
+    expand: {
+      control: 'select',
+      options: ['full', 'block']
+    },
+    size: {
+      control: 'select',
+      options: ['small', 'default', 'large']
+    },
   },
   args: { fill: 'outline', expand: 'full', size: 'small' },
 };
@@ -27,7 +36,7 @@ export const Primary: Story = {
     expand: 'full',
     size: 'small',
   },
-  render: (props) => <ion-button {...props} />,
+  render: (props) => <ion-button {...props}>Primary Button</ion-button>,
 };
 
 /**
@@ -39,4 +48,5 @@ export const Secondary: Story = {
     expand: 'block',
     size: 'large',
   },
+  render: (props) => <ion-button {...props}>Secondary Button</ion-button>,
 };

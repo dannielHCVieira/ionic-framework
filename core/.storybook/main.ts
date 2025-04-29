@@ -4,6 +4,7 @@ const config = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
+    "@storybook/addon-toolbars",
   ],
   framework: {
     name: "@stencil/storybook-plugin"
