@@ -50,7 +50,7 @@
     "@stencil/core": "^4.30.0",
     "@stencil/react-output-target": "0.5.3",
     "@stencil/sass": "^3.0.9",
-    "@stencil/storybook-plugin": "^0.0.11",
+    "@stencil/storybook-plugin": "^0.0.12",
     "@stencil/vue-output-target": "0.10.7",
     "@storybook/addon-essentials": "^8.6.12",
     "@storybook/addon-interactions": "^8.6.12",
