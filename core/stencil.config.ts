@@ -244,6 +244,7 @@ export const config: Config = {
     // },
     ...getAngularOutputTargets(),
   ],
+  buildEs5: 'prod',
   testing: {
     moduleNameMapper: {
       "@utils/test": ["<rootDir>/src/utils/test/utils"],
