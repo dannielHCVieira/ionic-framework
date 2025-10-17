@@ -16,11 +16,6 @@ export const defaultTheme: DefaultTheme = {
 
   fontFamily: '-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Roboto", sans-serif',
 
-  config: {
-    formHighlight: false,
-    rippleEffect: false,
-  },
-
   spacing: {
     xxxxs: 'var(--ion-spacing-25)',
     xxxs: 'var(--ion-spacing-50)',
