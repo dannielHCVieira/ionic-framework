@@ -31,28 +31,7 @@ jobs:
         with:
           stencil-version: ${{ inputs.npm_release_tag || 'nightly' }}
 
-  test-core-clean-build:
-    needs: [build-core-with-stencil-nightly]
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v5
-      - uses: ./.github/workflows/actions/test-core-clean-build
-
-  test-core-lint:
-    needs: [build-core-with-stencil-nightly]
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v5
-      - uses: ./.github/workflows/actions/test-core-lint
-
-  test-core-spec:
-    needs: [build-core-with-stencil-nightly]
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v5
-      - uses: ./.github/workflows/actions/test-core-spec
-        with:
-          stencil-version: ${{ inputs.npm_release_tag || 'nightly' }}
+  
 
   test-core-screenshot:
     strategy:

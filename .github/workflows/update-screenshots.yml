@@ -69,4 +69,9 @@ jobs:
         # to run when the screenshots are pushed.
         with:
           token: ${{ secrets.IONITRON_TOKEN }}
-      - uses: ./.github/workflows/actions/update-reference-screenshots
+      - name: Update Reference Screenshots (push if token present)
+        if: ${{ secrets.IONITRON_TOKEN != '' }}
+        uses: ./.github/workflows/actions/update-reference-screenshots
+      - name: Skip push and keep artifacts (no token)
+        if: ${{ secrets.IONITRON_TOKEN == '' }}
+        run: echo "IONITRON_TOKEN is not set; skipping push and retaining artifacts."
